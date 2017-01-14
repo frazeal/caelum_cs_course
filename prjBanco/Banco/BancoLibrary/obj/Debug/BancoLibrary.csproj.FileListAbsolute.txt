@@ -1,5 +1,5 @@
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\BancoLibrary\bin\Debug\BancoLibrary.dll
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\BancoLibrary\bin\Debug\BancoLibrary.pdb
-C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\BancoLibrary\obj\Debug\BancoLibrary.csprojResolveAssemblyReference.cache
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\BancoLibrary\obj\Debug\BancoLibrary.dll
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\BancoLibrary\obj\Debug\BancoLibrary.pdb
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\BancoLibrary\obj\Debug\BancoLibrary.csprojResolveAssemblyReference.cache

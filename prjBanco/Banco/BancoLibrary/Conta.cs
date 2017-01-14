@@ -6,33 +6,25 @@ using System.Threading.Tasks;
 
 namespace BancoLibrary
 {
-    public class Conta
+    public abstract class Conta
     {
 
         public int Numero { get; set; }
-        public double Saldo { get; private set; }
+        public double Saldo { get; protected set; }
         public Cliente Titular { get; set; }
+        public abstract string TipoConta { get; protected set; }
 
-        public Conta()
+        protected Conta()
         {
 
         }
 
-        public Conta(double saldoInicial)
+        protected Conta(double saldoInicial)
         {
             Saldo = saldoInicial;
         }
 
-        public virtual bool Sacar(double valor)
-        {
-            
-            if (this.Saldo >= valor)
-            {
-                this.Saldo -= valor;
-                return true;
-            }
-            return false;
-        }
+        public abstract bool Sacar(double valor);
 
         public void Depositar(double valor)
         {

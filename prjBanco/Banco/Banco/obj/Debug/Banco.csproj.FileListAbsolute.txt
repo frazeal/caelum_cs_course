@@ -8,4 +8,5 @@ C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\b
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\bin\Debug\BancoLibrary.pdb
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\obj\Debug\Banco.exe
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\obj\Debug\Banco.pdb
-C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\obj\Debug\Banco.frmConta.resources
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\obj\Debug\Banco.frmCadastroConta.resources
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco\Banco\Banco\obj\Debug\Banco.frmPrincipal.resources

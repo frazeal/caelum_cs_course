@@ -43,6 +43,7 @@
     <Compile Include="Conta.cs" />
     <Compile Include="ContaCorrente.cs" />
     <Compile Include="ContaPoupanca.cs" />
+    <Compile Include="FactoryConta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
