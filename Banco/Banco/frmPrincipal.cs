@@ -16,8 +16,9 @@ namespace Banco
     public partial class frmPrincipal : Form
     {
         //private Conta[] contas;
-        private ArrayList contas = new ArrayList();
-        private int indice = 0;
+        //private ArrayList contas = new ArrayList();
+        private List<Conta> contas = new List<Conta>();
+        //private int indice = 0;
         private int indiceTransferencia = 0;
         //private int numeroContas;  //>>> Implementada a variável estática na classe base
         private Conta contaSelecionada;
@@ -136,7 +137,8 @@ namespace Banco
             //contaSelecionada.Transferir(Convert.ToDouble(txtValor.Text), contas[indiceTransferencia]); //>> Array
             try
             {
-                contaSelecionada.Transferir(Convert.ToDouble(txtValor.Text), (Conta)contas[indiceTransferencia]); //>>> ArrayList, tem que forçar o cast
+                //contaSelecionada.Transferir(Convert.ToDouble(txtValor.Text), (Conta)contas[indiceTransferencia]); //>>> ArrayList, tem que forçar o cast
+                contaSelecionada.Transferir(Convert.ToDouble(txtValor.Text), contas[indiceTransferencia]);
                 MessageBox.Show("Operação realizada com sucesso!");
                 AtualizaDadosTela();
             }
@@ -176,9 +178,13 @@ namespace Banco
                 }
                 else
                 {
-                    if (conta.Numero != contaSelecionada.Numero)
+                    //if (conta.Numero != contaSelecionada.Numero)
+                    //{
+                    //    cmbContaDestinoTransferencia.Items.Add("Titular: " + conta.Titular.Nome);
+                    //}
+                    if (!conta.Equals(contaSelecionada))
                     {
-                        cmbContaDestinoTransferencia.Items.Add("Titular: " + conta.Titular.Nome);
+                        cmbContaDestinoTransferencia.Items.Add(conta);
                     }
                 }
             }

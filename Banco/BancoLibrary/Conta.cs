@@ -68,10 +68,12 @@ namespace BancoLibrary
             return (this.Numero == c.Numero);
         }
 
-        public override string ToString()
-        {
-            return "Titular: " + this.Titular.Nome;
-        }
+        //public override string ToString()
+        //{
+        //    return "Titular: " + this.Titular.Nome;
+        //}
+        // Não precisa sobrescrever o método, pq o comboBox tem a propriedade DisplayMember = "Titular"
+        // O objeto Titular é do tipo Cliente e o método ToString() foi sobrescrito nesta classe
 
     }
 }
