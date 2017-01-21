@@ -1,0 +1,4 @@
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_14012017\Banco\ErrosLibrary\bin\Debug\ErrosLibrary.dll
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_14012017\Banco\ErrosLibrary\bin\Debug\ErrosLibrary.pdb
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_14012017\Banco\ErrosLibrary\obj\Debug\ErrosLibrary.dll
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_14012017\Banco\ErrosLibrary\obj\Debug\ErrosLibrary.pdb
