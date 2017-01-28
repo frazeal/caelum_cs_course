@@ -18,9 +18,26 @@ namespace BancoLibrary
 
         }
 
+        public override string TipoConta 
+        { 
+            get
+            {
+                return "Conta Poupança";
+            }
+            protected set
+            {
+                TipoConta = value;
+            }
+        }
+
         public override bool Sacar(double valor)
         {
-            return base.Sacar(valor + 0.10);
+             if (this.Saldo >= valor)
+            {
+                this.Saldo -= (valor + 1);
+                return true;
+            }
+            return false;
         }
     }
 }

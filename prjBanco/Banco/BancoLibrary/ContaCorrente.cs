@@ -9,5 +9,26 @@ namespace BancoLibrary
     public class ContaCorrente : Conta
     {
 
+        public override string TipoConta
+        {
+            get
+            {
+                return "Conta Corrente";
+            }
+            protected set
+            {
+                TipoConta = value;
+            }
+        }
+        
+        public override bool Sacar(double valor)
+        {
+            if (this.Saldo >= valor)
+            {
+                this.Saldo -= valor;
+                return true;
+            }
+            return false;
+        }
     }
 }
