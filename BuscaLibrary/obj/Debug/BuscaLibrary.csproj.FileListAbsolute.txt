@@ -1,0 +1,5 @@
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\BuscaLibrary\bin\Debug\BuscaLibrary.dll
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\BuscaLibrary\bin\Debug\BuscaLibrary.pdb
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\BuscaLibrary\obj\Debug\BuscaLibrary.csprojResolveAssemblyReference.cache
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\BuscaLibrary\obj\Debug\BuscaLibrary.dll
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\BuscaLibrary\obj\Debug\BuscaLibrary.pdb
