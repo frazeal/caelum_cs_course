@@ -20,3 +20,5 @@ C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banc
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\Simulador\obj\Debug\Simulador.csprojResolveAssemblyReference.cache
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\Simulador\obj\Debug\Simulador.exe
 C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_28012017\Banco\Simulador\obj\Debug\Simulador.pdb
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_04022017\Banco\Simulador\obj\Debug\Simulador.csprojResolveAssemblyReference.cache
+C:\Users\csharp6472\Documents\Visual Studio 2013\Projects\prjBanco_04022017\Banco\Simulador\obj\Debug\Simulador.exe

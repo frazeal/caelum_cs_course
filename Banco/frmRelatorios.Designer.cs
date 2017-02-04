@@ -32,10 +32,10 @@
             this.btnFiltroSaldo = new System.Windows.Forms.Button();
             this.btnFiltroAntigas = new System.Windows.Forms.Button();
             this.grpResumo = new System.Windows.Forms.GroupBox();
-            this.lblSaldoTotal = new System.Windows.Forms.Label();
-            this.lblMaiorSaldo = new System.Windows.Forms.Label();
-            this.txtSaldoTotal = new System.Windows.Forms.TextBox();
             this.txtMaiorSaldo = new System.Windows.Forms.TextBox();
+            this.txtSaldoTotal = new System.Windows.Forms.TextBox();
+            this.lblMaiorSaldo = new System.Windows.Forms.Label();
+            this.lblSaldoTotal = new System.Windows.Forms.Label();
             this.grpResumo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,14 +80,21 @@
             this.grpResumo.TabStop = false;
             this.grpResumo.Text = "Resumo";
             // 
-            // lblSaldoTotal
+            // txtMaiorSaldo
             // 
-            this.lblSaldoTotal.AutoSize = true;
-            this.lblSaldoTotal.Location = new System.Drawing.Point(6, 23);
-            this.lblSaldoTotal.Name = "lblSaldoTotal";
-            this.lblSaldoTotal.Size = new System.Drawing.Size(64, 13);
-            this.lblSaldoTotal.TabIndex = 0;
-            this.lblSaldoTotal.Text = "Saldo Total:";
+            this.txtMaiorSaldo.Location = new System.Drawing.Point(76, 47);
+            this.txtMaiorSaldo.Name = "txtMaiorSaldo";
+            this.txtMaiorSaldo.ReadOnly = true;
+            this.txtMaiorSaldo.Size = new System.Drawing.Size(100, 20);
+            this.txtMaiorSaldo.TabIndex = 3;
+            // 
+            // txtSaldoTotal
+            // 
+            this.txtSaldoTotal.Location = new System.Drawing.Point(76, 19);
+            this.txtSaldoTotal.Name = "txtSaldoTotal";
+            this.txtSaldoTotal.ReadOnly = true;
+            this.txtSaldoTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtSaldoTotal.TabIndex = 2;
             // 
             // lblMaiorSaldo
             // 
@@ -98,21 +105,14 @@
             this.lblMaiorSaldo.TabIndex = 1;
             this.lblMaiorSaldo.Text = "Maior Saldo:";
             // 
-            // txtSaldoTotal
+            // lblSaldoTotal
             // 
-            this.txtSaldoTotal.Location = new System.Drawing.Point(76, 19);
-            this.txtSaldoTotal.Name = "txtSaldoTotal";
-            this.txtSaldoTotal.ReadOnly = true;
-            this.txtSaldoTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtSaldoTotal.TabIndex = 2;
-            // 
-            // txtMaiorSaldo
-            // 
-            this.txtMaiorSaldo.Location = new System.Drawing.Point(76, 47);
-            this.txtMaiorSaldo.Name = "txtMaiorSaldo";
-            this.txtMaiorSaldo.ReadOnly = true;
-            this.txtMaiorSaldo.Size = new System.Drawing.Size(100, 20);
-            this.txtMaiorSaldo.TabIndex = 3;
+            this.lblSaldoTotal.AutoSize = true;
+            this.lblSaldoTotal.Location = new System.Drawing.Point(6, 23);
+            this.lblSaldoTotal.Name = "lblSaldoTotal";
+            this.lblSaldoTotal.Size = new System.Drawing.Size(64, 13);
+            this.lblSaldoTotal.TabIndex = 0;
+            this.lblSaldoTotal.Text = "Saldo Total:";
             // 
             // frmRelatorios
             // 
@@ -125,6 +125,7 @@
             this.Controls.Add(this.lstResultado);
             this.Name = "frmRelatorios";
             this.Text = "Relatórios";
+            this.Load += new System.EventHandler(this.frmRelatorios_Load);
             this.grpResumo.ResumeLayout(false);
             this.grpResumo.PerformLayout();
             this.ResumeLayout(false);

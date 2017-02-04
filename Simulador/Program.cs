@@ -56,7 +56,8 @@ namespace Simulador
 
             Console.Read();
 
-            List<string> dev = null;
+            //List<string> dev = null;
+            ICollection<string> dev = null;
             dev = BuscaLibrary.GeradorDevedores.GeraListaT();
 
             foreach (var d in dev)

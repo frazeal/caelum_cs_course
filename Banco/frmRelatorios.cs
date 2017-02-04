@@ -27,7 +27,7 @@ namespace Banco
         {
             lstResultado.Items.Clear();
             var resultado = this.contas
-                            .Where(c => c.Saldo < 5000)
+                            .Where(c => c.Saldo > 5000)
                             .Select(n => n.Titular.Nome)
                             .OrderBy(x => x)    ////OrderByDescending(x => x)
                             .ToArray();
@@ -45,11 +45,34 @@ namespace Banco
         private void btnFiltroAntigas_Click(object sender, EventArgs e)
         {
             lstResultado.Items.Clear();
-            var resultado = this.contas
-                                       .Where(c => c.Numero < 10)
-                                       .Select(t => t.Numero.ToString())
-                                       .ToArray();
+            //var resultado = this.contas
+            //                           .Where(c => c.Numero < 10 && c.Saldo > 1000)
+            //                           .Select(t => new { num = t.Numero, nome = t.Titular.Nome })
+            //                           .OrderBy(t => t.nome)
+            //                           .ToArray();
+            var resultado = (this.contas
+                                       .Where(c => c.Numero < 10 && c.Saldo > 1000)
+                                       .Select(c => c)
+                                       .OrderBy(t => t.Titular.Nome)
+                                       .ThenBy(t => t.Numero)
+                                       )
+                                            .Select(x => x.Numero)
+                                            .Cast<Object>()
+                                            .ToArray();
             lstResultado.Items.AddRange(resultado);
+        }
+
+        private void frmRelatorios_Load(object sender, EventArgs e)
+        {
+            txtSaldoTotal.Text = this.contas
+                                       .Select(t => t.Saldo)
+                                       .Sum()
+                                       .ToString();
+
+            txtMaiorSaldo.Text = this.contas
+                                        .Select(c => c.Saldo)
+                                        .Max()
+                                        .ToString();
         }
     }
 }
